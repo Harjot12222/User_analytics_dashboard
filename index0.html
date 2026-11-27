@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Demo Store · Analytics test</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font:16px Arial,sans-serif;color:#282b2d;background:#faf9f6}header{padding:22px 8%;display:flex;justify-content:space-between;background:white;border-bottom:1px solid #eee}header b{letter-spacing:2px}nav{color:#777}main{margin:55px auto;max-width:900px;padding:55px;background:#eae6dc}small{letter-spacing:2px;color:#987b53}h1{font:48px Georgia;max-width:500px}p{color:#777;line-height:1.6}.btn{border:0;background:#242b27;color:white;padding:14px 22px;cursor:pointer;margin-top:15px}.products{display:flex;gap:15px;margin:25px auto;max-width:900px}.products div{background:white;flex:1;padding:30px 15px;text-align:center;min-height:120px}@media(max-width:600px){main{margin:20px;padding:25px}h1{font-size:34px}.products{padding:0 12px;flex-direction:column}}
+</style></head>
+<body><header><b>DEMO STORE</b><nav>Shop　 About　 Contact</nav></header>
+<main><small>THE EVERYDAY EDIT</small><h1>Good things for your everyday.</h1><p>This is a sample storefront. Click the button, navigation, or anywhere on the page to generate click events for the analytics dashboard.</p><button class="btn" onclick="this.textContent='Thanks for exploring!'">Explore collection</button></main>
+<section class="products"><div>Product One</div><div>Product Two</div><div>Product Three</div></section>
+<script src="../tracker/analytics.js" data-endpoint="http://localhost:4000/api/events"></script>
+</body></html>
